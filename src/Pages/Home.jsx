@@ -46,6 +46,7 @@ export default function Home() {
                 <li> <a href="#commission-container">Denk mee</a>  over toekomstige mogelijkheden</li>
               </ul>
           </div>
+          
           <div className='imageContainer'>
             <img src={IpadTilted} alt="" />
           </div>
