@@ -9,7 +9,7 @@
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
 }
 
 #titleContainer{
@@ -25,6 +25,10 @@
     padding: 150px 50px 50px 50px;
     display: flex;
     justify-content: space-between;
+}
+
+.smaller-image{
+    width: 80% !important;
 }
 
 .textContainer{

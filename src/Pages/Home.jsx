@@ -3,8 +3,54 @@ import Ipad from '../Images/Ipad.png'
 import IpadTilted from '../Images/Ipad-tilted.png'
 import '../Styles/home.css'
 import Footer from '../Components/Footer'
+import { useState } from 'react'
+import { doc, collection, addDoc, serverTimestamp } from "firebase/firestore"; 
+import { db } from "../firebase/config";
 
 export default function Home() {
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+
+  const nameHandler = (e) => {
+    const name = e.target.value 
+
+    setName(name)
+  }
+
+  const emailHandler = (e) => {
+    const email = e.target.value 
+
+    setEmail(email)
+  }
+
+  const sendFormHandler = async (e) => {
+
+    e.target.innerText = 'Verzonden'
+    e.target.style.backgroundColor = '#cecece'
+    e.target.style.borderColor = '#cecece'
+
+    await addDoc(collection(db, "Commission"), {
+        Name: name,
+        Email: email,
+        Timestamp: serverTimestamp()
+    })
+      
+
+    await addDoc(collection(db, "Mail"), {
+        to: "info@vitaminds.nu",
+        message: {
+        subject: `Nieuwe aanmelden voor de meedenk commissie voor Vitaminds.`,
+        html: ` Naam: ${name}</br></br>
+                Email: ${email}</br></br>
+                `,
+        Emailadres: email,
+        Type: "Commission"
+        }
+    })
+
+
+  }
+
   return (
     <>
     <div id='landingContainer'>
@@ -48,12 +94,12 @@ export default function Home() {
           </div>
           
           <div className='imageContainer'>
-            <img src={IpadTilted} alt="" />
+            <img className='smaller-image' src={IpadTilted} alt="" />
           </div>
         </div>
         <div className='sectionContainer'>
           <div className='imageContainer'>
-            <img src={Ipad} alt="" />
+            <img className='smaller-image' src={Ipad} alt="" />
           </div>
           <div className='textContainer'>
               <h1>Deel, leer en groei</h1>
@@ -77,11 +123,11 @@ export default function Home() {
           </div>
           <div className='textContainer' id='send-form-container'>
               <p>Naam</p>
-              <input type="text" placeholder='Schrijf hier je naam' />
+              <input type="text" placeholder='Schrijf hier je naam' onChange={nameHandler} />
               <p>emailadres</p>
-              <input type="text" placeholder='Schrijf hier je emailadres' />
+              <input type="text" placeholder='Schrijf hier je emailadres' onChange={emailHandler}/>
               <div className='button-container'>
-                <button>Versturen</button>
+                <button onClick={sendFormHandler}>Versturen</button>
               </div>
           </div>
         </div>
