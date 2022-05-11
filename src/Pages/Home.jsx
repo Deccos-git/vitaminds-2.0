@@ -87,7 +87,7 @@ export default function Home() {
                 van een groeiende en levendige gemeenschap van mensen die weten wat je doormaakt.</p>
               <ul>
                 <li>Je hoeft het niet alleen te doen</li>
-                <li>Je bent geen client of diagnose</li>
+                <li>Je bent geen cliënt of diagnose</li>
                 <li>Ontdek wat er allemaal wel mogelijk is</li>
                 <li> <a href="#commission-container">Denk mee</a>  over toekomstige mogelijkheden</li>
               </ul>
@@ -103,10 +103,10 @@ export default function Home() {
           </div>
           <div className='textContainer'>
               <h1>Deel, leer en groei</h1>
-              <p>Deel je ervaring, je doelen en obstakels met mensen die weten wat je meemaakt.</p>
+              <p>Deel je ervaringen, je doelen en obstakels met mensen die weten wat je meemaakt.</p>
               <ul>
                 <li>Deel en lees ervaringsverhalen</li>
-                <li>Wordt actief in online themagroepen</li>
+                <li>Word actief in online themagroepen</li>
                 <li>Lees inspirerende artikelen, nieuwsitems en dompel je onder in online workshops</li>
                 <li>Meld je aan voor cursussen, trainingen en andere evenementen bij jou in de buurt</li>
                 <li> <a href="#commission-container">Denk mee</a>  over toekomstige mogelijkheden</li>
@@ -116,7 +116,7 @@ export default function Home() {
         <div className='sectionContainer' id='commission-container'>
           <div className='imageContainer'>
             <h1>Meld je aan voor de meedenk commissie</h1>
-            <p>De meedenk commissie bestaat uit toekomstige gebruikers en herstelacademie's die mee willen denken over de 
+            <p>De meedenk commissie bestaat uit toekomstige gebruikers en herstelacademies die mee willen denken over de 
               manier waarop Vitaminds er staks uit gaat zien en hoe Vitaminds gebruikt gaat worden.</p>
             <p>Wanneer je je aanmeldt wordt je uitgenodigd voor de (online) bijeenkomsten waarin we met 
               elkaar in gesprek gaan over de toekomst van Vitaminds.</p>
