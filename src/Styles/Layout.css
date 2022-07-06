@@ -70,6 +70,7 @@ input{
     align-items: center;
     justify-content: flex-start;
     box-shadow: 0 1px 3px 0 rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 2px 1px -1px rgb(0 0 0 / 12%);
+    margin-top: 30px;
 }
 
 #topbarButton{
@@ -94,5 +95,20 @@ input{
 }
 
 #footer-powered-by{
+    font-size: 12px;
+}
+
+#contact-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: fixed;
+    height: 30px;
+    background-color: #f5fcff;
+    width: 100%;
+}
+
+#contact-container p{
+    margin-right: 10px;
     font-size: 12px;
 }

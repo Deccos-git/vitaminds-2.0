@@ -19,7 +19,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='sectionContainer'>
+        <div className='sectionContainer reversed-container'>
           <div className='imageContainer'>
             <img className='smaller-image' src={IpadTilted} alt="" />
           </div>
@@ -51,7 +51,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='sectionContainer'>
+        <div className='sectionContainer reversed-container'>
           <div className='imageContainer'>
             <img src={macBookMockup} alt="" />
           </div>

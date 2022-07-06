@@ -71,3 +71,32 @@
     justify-content: center;
 }
 
+@media only screen and (max-width: 1024px){
+
+    .sectionContainer{
+        padding: 50px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imageContainer{
+        width: 100%;
+        padding-top: 30px;
+    }
+
+    .textContainer {
+        width: 100%;
+    }
+
+    .reversed-container{
+        flex-direction: column-reverse;
+    }
+
+    #titleContainer{
+        padding: 20px;
+        width: 90%;
+        background-color: #ffffffc2;
+    }
+}
+
