@@ -9,7 +9,9 @@ const TopBar = () => {
       </div>
       <div id='topbarLandingContainer'>
         <img id='topbar-logo' src={Logo} alt="Logo Vitaminds" />
-        {/* <button id='topbarButton'>Inloggen</button> */}
+        <button id='topbarButton'>
+          <a href="https://vitaminds.web.app/" target='_blank'>Mijn Vitaminds</a> 
+        </button>
       </div>
     </div>
 

@@ -75,7 +75,11 @@ input{
 
 #topbarButton{
     margin-left: auto;
-    margin-right: 30px;
+    margin-right: 60px;
+}
+
+#topbarButton a{
+    color: white;
 }
 
 #topbar-logo{

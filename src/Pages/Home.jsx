@@ -16,6 +16,9 @@ export default function Home() {
           <div id='titleContainer'>
             <h1 id='title-hero'>Online herstel community</h1>
             <p>Vitaminds is een online herstel community voor en door mensen die herstellen van een heftige periode in hun leven</p>
+            <button id='home-cta-button'>
+              <a href="https://vitaminds.web.app/register" target='_blank'>Aanmelden</a>
+            </button>
           </div>
         </div>
 
