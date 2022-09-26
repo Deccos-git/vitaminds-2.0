@@ -1,8 +1,8 @@
 import React from 'react'
 import Topbar from '../Components/TopBar'
+import '../Styles/index.scss'
 import Navigation from '../Nav/Navigation'
-import '../Styles/Layout.css'
-import Home from '../Pages/Home'
+import Footer from './Footer'
 
 const Layout = () => {
   return (
@@ -10,7 +10,8 @@ const Layout = () => {
         <main>
             <section id='page'>
                 <Topbar/>
-                <Home/>
+                <Navigation/>
+                <Footer/>
             </section>
         </main>
     </div>

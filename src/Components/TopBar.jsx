@@ -1,20 +1,27 @@
 import Logo from '../Images/Logo2021-red.png'
+import { NavLink } from "react-router-dom"
 
 const TopBar = () => {
   return (
-    <div>
-      <div id='contact-container'> 
-        <p>info@vitaminds.nu</p>
-        <p>06 244 098 43</p>
-      </div>
-      <div id='topbarLandingContainer'>
+    <div id='topbarLandingContainer'>
+      <NavLink to={`/`} activeClassName="selected">
         <img id='topbar-logo' src={Logo} alt="Logo Vitaminds" />
-        <button id='topbarButton'>
-          <a href="https://vitaminds.web.app/" target='_blank'>Mijn Vitaminds</a> 
-        </button>
+      </NavLink>
+      <div id='nav-menu'>
+        <NavLink to={`/herstelacademies`} activeClassName="selected">
+        <p>Voor herstelacademies</p>
+        </NavLink>
+        <NavLink to={`/over-ons`} activeClassName="selected">
+        <p>Over ons</p>
+        </NavLink>
+        <NavLink to={`/contact`} activeClassName="selected">
+        <p>Contact</p>
+        </NavLink>
       </div>
+      <button id='topbarButton'>
+        <a href="https://vitaminds.web.app/" target='_blank'>Mijn Vitaminds</a> 
+      </button>
     </div>
-
   )
 }
 

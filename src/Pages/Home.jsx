@@ -1,16 +1,10 @@
 import macBookMockup from '../Images/MacBookAir.png'
 import Ipad from '../Images/Ipad.png'
 import IpadTilted from '../Images/Ipad-tilted.png'
-import '../Styles/home.css'
-import Footer from '../Components/Footer'
-import { useState } from 'react'
-import { doc, collection, addDoc, serverTimestamp } from "firebase/firestore"; 
-import { db } from "../firebase/config";
 
 export default function Home() {
 
   return (
-    <>
     <div id='landingContainer'>
         <div id='heroContainer'>
           <div id='titleContainer'>
@@ -27,9 +21,9 @@ export default function Home() {
             <img className='smaller-image' src={IpadTilted} alt="" />
           </div>
           <div className='textContainer'>
-              <h1>Word onderdeel van een groeiende gemeenschap</h1>
+              <h1>Word onderdeel van een levendige gemeenschap</h1>
               <p>Herstellen hoef je niet alleen te doen. Op Vitaminds word je onderdeel 
-                van een groeiende en levendige gemeenschap van mensen die weten wat je doormaakt.</p>
+                van een levendige gemeenschap van mensen die weten wat je doormaakt.</p>
               <ul>
                 <li>Je hoeft het niet alleen te doen</li>
                 <li>Je bent geen cliënt of diagnose</li>
@@ -68,7 +62,5 @@ export default function Home() {
           </div>
         </div>
     </div>
-    <Footer/>
-    </>
   )
 }

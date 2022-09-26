@@ -1,8 +1,11 @@
 import Layout from './Components/Layout';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
-    <Layout/>
+    <BrowserRouter key='router'>
+        <Layout/>
+    </BrowserRouter>
   );
 }
 
