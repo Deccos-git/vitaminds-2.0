@@ -89,3 +89,37 @@ input{
     margin-right: 10px;
     font-size: 12px;
 }
+
+.pageTitleContainer{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: white;
+}
+
+.page-header-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .page-header-title-container{
+        margin: 0px 50px;
+        width: 49%;
+
+        h1{
+            font-size: 45px;
+        }
+    }
+
+    .page-header-image-container{
+        margin: 0px 50px;
+        width: 49%;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .page-header-container{
+        flex-direction: column;
+    }
+}
+    

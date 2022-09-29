@@ -1,0 +1,15 @@
+#contact-outer-container{
+    padding: 50px;
+
+    .contact-item-container{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 50px;
+
+        p{
+            margin-left: 20px;
+            font-size: 30px;
+        };
+    }
+}
